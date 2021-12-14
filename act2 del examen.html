@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad 2</title>
+    </head> 
+    <style>
+        h1{text-align: center;color: black;}
+        #t1{width: 30%;}
+        #t2{width: 30%;}
+        #l1{background-color: black;color: white;}
+        #l2{background-color: black;color: white;}
+        #E1{background-color: black;color: white;}
+        #B1{background-color: black;color: white;}
+    </style>
+    <body id="bb">
+        <form action="https://ptsv2.com/t/smx2m08/post" method="post"></form>
+        <h1>Informacion sobre el producto</h1>
+        <fieldset id="t1">
+            <legend id="l1"><u><b>Datos basicos</b></u></legend>
+            Nombre
+            <br/><input type="text" name="Nombre" value=""/>
+            <br/>
+            Descripcion
+            <br/><textarea name="Descripcion" id="Descripcion"></textarea>
+            <br/>
+            <br/><input name="Añadir contador de visitas" type="checkbox" id="contador de visitas"/>Añadir contador de visitas
+        </fieldset>
+        <fieldset id="t2">
+            <legend id="l2">Datos Economicos</legend>
+            Precio<input type="text" size="3"> €       Impuestos
+            <select id="so" name="so">
+                <option value="" selected="selected">4% -</option>
+                <option value="10%">21%</option>
+                <option value="21%">10%</option>
+            </select>
+            <br/>
+            <br/>Promocion
+            <br/><input type="radio" name="Ninguna" value="Ninguna" />Ninguna
+            <br/><input type="radio" name="Transporte gratiuto" value="Transporte gratiuto" />Transporte gratiuto
+            <br/><input type="radio" name="Descuento 5%" value="Descuento 5%" />Descuento 5%
+        </fieldset>
+        <br/>
+            <input id="E1" type="submit" value="Enviar"/><input id="B1" type="reset" value="Borrar" />
+    </body>
+</html>
